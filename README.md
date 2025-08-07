@@ -1,37 +1,46 @@
 # Hopfield Network with Sleep using PyTorch
 
-This project implements a Hopfield network with sleep phases using the Hebbian learning rule. The implementation is done using PyTorch.
+This project implements a Hopfield network with sleep phases using the Hebbian learning rule. The implementation is done using Python.
 
 ## Table of Contents
 - [Introduction](#introduction)
-- [Requirements](#requirements)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+- [TODO](#todo)
 
 ## Introduction
 Hopfield networks are a type of recurrent artificial neural network that can serve as content-addressable memory systems. This project explores the concept of incorporating sleep phases into the Hopfield network to enhance its performance and stability.
 
-## Requirements
-- Python 3.6+
-- PyTorch 1.7+
-- NumPy
+## TODO
 
-## Installation
-To install the required packages, run:
-```bash
-pip install torch numpy
-```
+- Find the performance bottlenecks and optimize if possible/easy, using `cProfile`. Evaluate vectorizations/parallelizations/numba llvm optimizations/etc... 
 
-## Usage
-To train and test the Hopfield network with sleep, run the following command:
-```bash
-python main.py
-```
+- Refactor repo
 
-## Contributing
-Contributions are welcome! Please fork the repository and submit a pull request.
+- Hopfield theory summary (Definition of $\alpha$, what constitutes a correctly retrieved pattern? minimal basin size, understand phases, unlearning, observables, spurious states, spin glass theory derivation of sleep)
 
-## License
-This project is licensed under the MIT License.
+- Read paper: how do correlated datasets affect learning?
+
+- Structure the project presentation (LateX/Manim)
+
+- Prepare the final results/visualizations
+
+### Presentation
+- Motivation (why hopfield, why sleep? Why train with stimuli instead of Hebbian weights? Parallels with real associative memory with images)
+
+- Theory of sleep with spin glasses
+
+- Diff equation of sleep
+
+- Simulation results (capacity->consolidation, spurious states -> unlearning. Correlated data. One animation of a cifar10 retrieval)
+
+### Advanced
+- Very briefly study spin glass calculations for sleep
+
+- Study the convergence of the hebbian wake phase analytically
+
+- What could be animated about the project presentation?
+
+- Scaling of hyperparameters
+
+- Classification with Hopfield
+
+- Cifar10 performance
