@@ -2,7 +2,7 @@
 
 This project implements a Hopfield network with sleep phases using the Hebbian learning rule. The implementation is done using Python.
 
-Hopfield networks are a type of recurrent artificial neural network that can serve as content-addressable memory systems. This project explores the concept of incorporating sleep phases into the Hopfield network to enhance its performance and stability. What's most interesting is 
+Hopfield networks are a type of recurrent artificial neural network that can serve as content-addressable memory systems. This project explores the concept of incorporating sleep phases into the Hopfield network to enhance its performance and stability. Sleeping also sensibly improves performance on correlated data, giving the model the capability to learn abstract features of patterns.
 
 # References
 [1]  Fachechi, A., Agliari, E., and Barra, A. (2018). Dreaming neural networks: forgetting spurious memories and reinforcing pure ones.
